@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "firstjoin": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "syb:trigger/player/first_join"
+  }
+}

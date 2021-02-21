@@ -1,0 +1,1 @@
+execute store result score @s arrows run clear @s minecraft:arrow 0

@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Tags:["powerup"],NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:crossbow",Count:1b,tag:{ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{},{}],Charged:1b}}]}

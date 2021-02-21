@@ -1,0 +1,1 @@
+execute if score @s shoot_crossbow matches 1.. run function syb:trigger/player/clear_powerup
