@@ -1,6 +1,7 @@
 title @a subtitle [{"selector":"@a[tag=top_killer]","color":"green"},{"text":" "},{"text":"won!","color":"green"}]
 title @a title {"text":"Game Over!","color":"yellow"}
 clear @a
+kill @e[type=minecraft:arrow]
 tag @a remove recharging
 tag @a remove playing
 team join lobby @a

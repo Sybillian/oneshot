@@ -1,2 +1,0 @@
-execute as @e[type=minecraft:armor_stand,tag=powerup,y_rotation=0.1..180] at @s run tp @s ~ ~0.01 ~ ~3 ~
-execute as @e[type=minecraft:armor_stand,tag=powerup,y_rotation=-180..0] at @s run tp @s ~ ~-0.01 ~ ~3 ~

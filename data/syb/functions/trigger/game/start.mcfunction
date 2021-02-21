@@ -2,6 +2,7 @@ tag @a add playing
 team join players @a
 execute as @a[tag=playing] at @e[tag=spawn,limit=1,sort=random] run tp @s ~ ~ ~
 execute as @a run attribute @s minecraft:generic.max_health base set 2
+attribute @s minecraft:generic.attack_speed base set 40
 effect give @a minecraft:weakness 100000 9 true
 scoreboard objectives setdisplay sidebar leaderboard
 scoreboard objectives setdisplay list kills
