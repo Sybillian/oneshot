@@ -22,3 +22,10 @@ execute as @a[tag=playing,tag=!killer_1,tag=!killer_2] if score @s kills = kill_
 execute as @a[tag=killer_1] run scoreboard players operation @s leaderboard = @s kills
 execute as @a[tag=killer_2] run scoreboard players operation @s leaderboard = @s kills
 execute as @a[tag=killer_3] run scoreboard players operation @s leaderboard = @s kills
+
+## Powerups
+execute as @e[type=minecraft:armor_stand,tag=powerup,y_rotation=0.1..180] at @s run tp @s ~ ~0.01 ~ ~3 ~
+execute as @e[type=minecraft:armor_stand,tag=powerup,y_rotation=-180..0] at @s run tp @s ~ ~-0.01 ~ ~3 ~
+execute as @e[type=minecraft:armor_stand,tag=powerup] at @s if entity @a[tag=playing,tag=!has_powerup,distance=0..1,limit=1,sort=nearest] run function syb:trigger/game/give_powerup
+scoreboard players remove powerup_timer game_data 1
+execute if score powerup_timer game_data matches ..0 run function syb:trigger/game/spawn_powerup

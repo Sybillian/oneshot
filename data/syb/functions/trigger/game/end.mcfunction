@@ -7,5 +7,6 @@ team join lobby @a
 gamemode adventure @a
 tp @a 0 93 0
 effect give @a minecraft:weakness 100000 9 true
+scoreboard players set game_active game_data 0
 
 schedule function syb:trigger/game/reset 3s

@@ -53,6 +53,7 @@ scoreboard objectives add leaderboard dummy {"text":"Top Killers","color":"green
 scoreboard objectives setdisplay sidebar leaderboard
 
 scoreboard players set game_active game_data 0
+scoreboard players set powerup_timer game_data 200
 
 team add players
 team modify players color green
